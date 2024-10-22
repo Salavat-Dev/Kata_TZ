@@ -70,7 +70,7 @@ class split_result {
             if (s.equals("*")) {
                 if (digit <= Integer.parseInt(secondValue)) {
                     digit = Integer.parseInt(secondValue);
-                    if (digit > 10 || digit < 0) {
+                    if (digit > 10 || digit == 0) {
                         System.out.println("Попробуй еще. Диапазон чисел 1-10");
                         return splitMethod();
                     }
@@ -86,7 +86,7 @@ class split_result {
             if (s.equals("/")) {
                 int index = firstValue.length();
                 digit = Integer.parseInt(secondValue);
-                if (digit > 10 || digit < 0) {
+                if (digit > 10 || digit == 0) {
                     System.out.println("Попробуй еще. Диапазон чисел 1-10");
                     return splitMethod();
                 }
