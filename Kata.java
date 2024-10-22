@@ -57,7 +57,7 @@ class split_result {
             }
         }
         if (s.equals("*") || s.equals("/")) {                                     // обрабатываем / и *
-            int digit = 1;
+            int digit = 0;
             try {
                 if (input[1].contains("\"")) {                                  //Проверяем что делим/умножаем не на строку
                     System.out.println("Умножать и делить можно только на число, попробуй еще");
